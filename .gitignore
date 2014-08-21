@@ -1,0 +1,44 @@
+
+Tab
+bin
+*/test-output
+temp-testng-customsuite.xml
+**pom.xml.releaseBackup
+release.properties
+project.properties
+*.iws
+*.iml
+gen
+*/seed.txt
+notes
+logs
+gen-external-apklibs
+.idea
+out
+.DS_Store
+classes
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# IntelliJ IDE files
+.idea
+.idea/*rget
