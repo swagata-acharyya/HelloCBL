@@ -14,6 +14,8 @@ import org.ektorp.support.View;
 
 import android.util.Log;
 
+import com.google.common.base.Optional;
+
 @View(name = "all", map = "function(doc) { if (doc.type === 'SamplePojo') emit(null, doc._id)}")
 public class SamplePojoDao {
 
@@ -78,5 +80,9 @@ public class SamplePojoDao {
 
     protected String buildId(final String documentType, final String components) {
         return documentType + ":" + components;
+    }
+
+    public Optional find(final String identifier) {
+        return Optional.fromNullable(connector.find(SamplePojo.class, identifier));
     }
 }

@@ -14,11 +14,44 @@ public class SamplePojo implements Serializable {
     private String id;
     private String name;
     private String revision;
+    private String type;
+    private String _id;
+
+    /**
+     * @return the _id
+     */
+    String get_id() {
+        return _id;
+    }
+
+    /**
+     * @param _id
+     *            the _id to set
+     */
+    void set_id(String _id) {
+        this._id = _id;
+    }
+
     /**
      * @return the id
      */
     public String getId() {
         return id;
+    }
+
+    /**
+     * @return the type
+     */
+    String getType() {
+        return type;
+    }
+
+    /**
+     * @param type
+     *            the type to set
+     */
+    void setType(String type) {
+        this.type = type;
     }
 
     /**

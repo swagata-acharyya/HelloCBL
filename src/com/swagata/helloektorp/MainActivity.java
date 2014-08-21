@@ -101,7 +101,7 @@ public class MainActivity extends Activity {
 
                     public void run() {
                         while (true) {
-                            Log.d("CHECK", dao.getAll() + "");
+                            Log.d("CHECK", dao.find("SamplePojo:SecondPojo") + "");
                             try {
                                 sleep(5000);
                             } catch (InterruptedException e) {
