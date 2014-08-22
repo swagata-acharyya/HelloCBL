@@ -11,8 +11,6 @@ import org.ektorp.support.DesignDocument;
 import org.ektorp.support.StdDesignDocumentFactory;
 import org.ektorp.support.View;
 
-import android.util.Log;
-
 import com.google.common.base.Optional;
 import com.swagata.helloektorp.pojo.SamplePojo;
 
@@ -55,7 +53,7 @@ public class SamplePojoDao {
         final boolean changed = standard.mergeWith(generated);
         if (changed) {
             connector.update(standard);
-        } else if (!flag) {
+        } else if (flag) {
             connector.create(standard);
         }
     }
